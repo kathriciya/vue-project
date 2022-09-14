@@ -1,9 +1,17 @@
 <template>
   <div>
-    <button v-on:click="addLike">Like</button>
-    <button @click="addDislike">Dislike</button>
-    <div>Кол-во лайков: <strong>{{ likes }}</strong></div>
-    <div>Кол-во дизлайков: <strong>{{ dislikes }}</strong></div>
+    <div class="post">
+      <div><strong>Название: </strong> Пост о JavaScript</div>
+      <div><strong>Описание: </strong> JavaScript универсальный язык программирования</div>
+    </div>
+    <div class="post">
+      <div><strong>Название: </strong> Пост о JavaScript</div>
+      <div><strong>Описание: </strong> JavaScript универсальный язык программирования</div>
+    </div>
+    <div class="post">
+      <div><strong>Название: </strong> Пост о JavaScript</div>
+      <div><strong>Описание: </strong> JavaScript универсальный язык программирования</div>
+    </div>
   </div>
 </template>
 
@@ -26,4 +34,16 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .post {
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+  }
+</style>
