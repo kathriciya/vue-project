@@ -21,9 +21,7 @@
   </form>
 </template>
 <script>
-import MyButton from './UI/MyButton.vue';
 export default {
-  components: { MyButton },
   data() {
     return {
       post: {
