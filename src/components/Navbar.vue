@@ -1,14 +1,22 @@
 <template lang="">
   <div class="navbar">
-    <div @click="$router.push('/')">Vue 3</div>
+    <div
+      @click="$router.push('/')"
+      style="color: teal; font-size: 24px; font-weight: bold"
+    >
+      Vue 3
+    </div>
     <div class="navbar__btns">
       <my-button @click="$router.push('/posts')">Посты</my-button>
-      <my-button style="margin-left: 20px" @click="$router.push('/about')"
+      <my-button style="margin-left: 10px" @click="$router.push('/about')"
         >Информация о ...</my-button
       >
 
-      <my-button style="margin-left: 20px" @click="$router.push('/store')"
+      <my-button style="margin-left: 10px" @click="$router.push('/store')"
         >Store</my-button
+      >
+      <my-button style="margin-left: 10px" @click="$router.push('/composition')"
+        >Composition</my-button
       >
     </div>
   </div>
